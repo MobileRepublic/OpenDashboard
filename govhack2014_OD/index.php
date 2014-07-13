@@ -206,7 +206,7 @@ $tot2011 = $total['2011'];*/
 						
 						<div class="half-left" style="background:#fff; text-align:center;">
 							
-							<select onChange="updateStackChart(this.id);" id="dpState"> <option value="" selected="selected">Employement by State</option>
+							<select onChange="updateStackChart(this.id);" id="dpState"> <option value="" selected="selected">Employment by State</option>
 									  <?php foreach($state as $st){ ?>
 									  <option value="<?php echo $st; ?>"><?php echo $st; ?> </option>
 									  <?php } ?>
