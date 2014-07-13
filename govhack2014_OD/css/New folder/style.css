@@ -1,0 +1,229 @@
+	body{ background:#00c2df; padding:0px; margin:0px; font-family:Arial, Helvetica, sans-serif;}
+			body, *{ -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing:border-box;}
+			#formBuzType{ }
+			.title{ background:#0191a6; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; padding:8px 15px; font-family:inherit; color:#fff; text-align:center; margin-top:0px; }
+			#list{
+			width:30%;
+			float:left;
+			border-right: 1px solid rgba(255,255,255,0.3);
+			padding:15px;
+			overflow:hidden;
+			overflow-y:auto;
+			height:678px;
+			}
+			#graph{ 
+			width: 70%;
+			float:left;
+			padding:15px;
+			} 
+			.axis {
+			font: 12px sans-serif;
+			color:#000;
+			}
+	 
+			
+			.axis path,
+			.axis line {
+			fill: none;
+			stroke: steelblue;
+			shape-rendering: crispEdges;
+			}
+			.bar {
+			/*fill: LightSalmon;*/
+			
+			fill:#ff8975;
+			-webkit-transition:all 0.3s ease-in-out;
+			-moz-transition:all 0.3s ease-in-out;
+			-o-transition:all 0.3s ease-in-out;
+			-ms-transition:all 0.3s ease-in-out;
+			transition:all 0.3s ease-in-out;
+			}
+			.full-width{ width:100%; display:block; float:left;}
+			
+			.bar:hover {
+			/*fill: brown;*/
+			fill:#ff5c36;
+			}
+			.list-checkbox{float:left; width: 5%; margin:1px 0px; padding:0px;}
+			.list-name { width:95%; float:left; color:#fff; font-size:14px;}
+			h1.range { font-size:64px; color:#b8f6ff; line-height:50px; letter-spacing:1px; text-align:center;}
+			
+			#topTitle { /* fallback */ background-color: #c3c3c3; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c3c3c3), to(#fafafa)); /* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(top, #fafafa, #c3c3c3); /* Firefox 3.6+ */ background: -moz-linear-gradient(top, #fafafa, #c3c3c3); /* IE 10 */ background: -ms-linear-gradient(top, #fafafa, #c3c3c3); /* Opera 11.10+ */ background: -o-linear-gradient(top, #fafafa, #c3c3c3);
+			padding:10px 18px; font-family:inherit; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; -ms-border-radius:4px; -o-border-radius:4px; display:inline-block; text-align:center; margin-top:0 auto;
+			}
+			h4.crashNotext { font-size:1.5em; color:#036; margin:0;}
+			h6.crashNo { color:#ca345e; margin:0; font-size:1em;}
+			.half-left { width:50%; float:left; padding:10px; margin:10px 0px;}
+			.half-right { width:50%; float:right; padding:10px; margin:10px 0px;}
+			.border-right {border-right: 1px solid rgba(112,236,255,1.0);}
+			.mrg-tb { margin:20px 0px;}
+			.border-top {border-top: 1px solid rgba(112,236,255,1.0);}
+			.mrg-bottom { margin-bottom:100px;}
+			
+		/*	#pieChart { cursor:pointer;    
+			  
+			}*/
+			
+			
+			
+			/*#lineChart {    
+			position:absolute;
+			top:10px;
+			left:410px;
+			height: 150px;
+			}
+			
+			#barChart {
+			position:absolute;
+			top:160px;
+			left:410px;
+			height: 250px;
+			}*/
+			
+			.slice {
+			font-size: 12pt;
+			font-family: Verdana;
+			fill: white; //svg specific - instead of color
+			font-weight: bold;	
+			cursor:pointer;
+			}
+			.stackchart{ cursor:pointer;}
+			
+			/*for line chart*/
+			.axis path, .axis line {
+			fill: none;
+			stroke: black;
+			shape-rendering: crispEdges; //The shape-rendering property is an SVG attribute, used here to make sure our axis and its tick mark lines are pixel-perfect. 
+			}
+			
+			.line {
+			fill: none;
+			/*stroke: steelblue;*/
+			stroke-width: 3px;
+			}
+			
+			.dot {
+			/*fill: white;*/
+			/*stroke: steelblue;*/
+			stroke-width: 1.5px;
+			}
+			
+			
+			.axis text {
+			font-family: Verdana;
+			font-size: 11px;
+			}
+			
+			.title {
+			font-family: Verdana;
+			font-size: 15px;	
+			
+			}
+			
+			.xAxis {
+			font-family: verdana;
+			font-size: 11px;
+			fill: black;
+			}  
+			
+			.yAxis {
+			font-family: verdana;
+			font-size: 11px;
+			fill: white;
+			}
+			
+			
+			table {
+			border-collapse:collapse;
+			border: 0px;	
+			font-family: Verdana;	
+			color: #5C5558;
+			font-size: 12px;
+			text-align: right;			
+			}
+			
+			td {
+			padding-left: 10px;		
+			}
+			
+			#lineChartTitle1 {
+			font-family: Verdana;
+			font-size  : 14px;
+			fill       : lightgrey;
+			font-weight: bold;
+			text-anchor: middle;
+			}
+			
+			#lineChartTitle2 {
+			font-family: Verdana;
+			font-size  : 72px;
+			fill       : grey;
+			text-anchor: middle;
+			font-weight: bold;
+			display:none;
+			/*font-style: italic;*/
+			}
+			
+/*			text {
+    font-family: sans-serif;
+    font-size: 12px;
+    fill: white;
+}*/
+#tooltip {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -mox-box-shadow: 4px 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rbga(0, 0, 0, 0.4) pointer-events: none;
+}
+#tooltip.hidden {
+    opacity: 0;
+}
+#tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+/*===================================Optional Css=====================================================*/
+/*.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+#tooltip {
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+#tooltip.hidden {
+    display: none;
+}
+#tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}*/
