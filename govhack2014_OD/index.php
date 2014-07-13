@@ -108,6 +108,7 @@ $tot2011 = $total['2011'];*/
 		}
 		#lineChart svg { position:relative; top:0px; border:1px solid #060606;}
 		#pieChart { padding-top:20px;}
+		select { padding:5px; width:50%;}
 	</style>
 	
 	
@@ -133,7 +134,8 @@ $tot2011 = $total['2011'];*/
                   <img src="images/Logo.png" alt="GovHack" style="float:left; height:50px; padding:0px 10px;"/>
               </div>
               <div style="width:65%; float: left;">
-                <span style="float:left; margin-left:7%;color:#cb355f;">Open Dashboard for GovHack</span>
+                  <a target="_new" href="http://hackerspace.govhack.org/content/open-dashboard
+"> <span style="float:left; margin-left:7%;color:#cb355f;">Open Dashboard by Accendo Republic</span></a>
               </div>
           </h3>
           <div style="width:1004px; margin:90px auto 0 auto;background:#fff;">
@@ -204,7 +206,7 @@ $tot2011 = $total['2011'];*/
 						
 						<div class="half-left" style="background:#fff; text-align:center;">
 							
-							<select onChange="updateStackChart(this.id);" id="dpState"> <option value="" selected="selected">Employement by Sector</option>
+							<select onChange="updateStackChart(this.id);" id="dpState"> <option value="" selected="selected">Employement by State</option>
 									  <?php foreach($state as $st){ ?>
 									  <option value="<?php echo $st; ?>"><?php echo $st; ?> </option>
 									  <?php } ?>
